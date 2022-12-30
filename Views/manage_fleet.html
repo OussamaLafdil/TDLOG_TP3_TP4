@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles/style.css">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/battleship.jpg">
+    <title>Manage fleet</title>
+</head>
+<body>
+<div id="menu">
+    <a href = "home.html">Home</a>
+    <a href = "create_game.html">Create game</a>
+    <a href = "play_game.html">Play game</a>
+    <a href = "join_game.html">Join game</a>
+    <a href = "manage_fleet.html">Manage fleet</a>
+</div>
+<div class="vertical-container">
+    <div class="form-result" id="create-game-result"></div>
+    <div>
+        <form id="create-game-form">
+            <label for="player-name">Ton pseudo:</label><br>
+            <input type="text" id="player-name" name="player_name" required><br><br>
+            <label for="game-id">Identifiant de la partie:</label><br>
+            <input type="number" id="game-id" name="game-id" required><br><br>
+            <input class="submit-button" type="submit" value="Charger ma flotte"><br><br>
+            <label for="vessel-select">Choisir le type du vaisseau:</label><br>
+                <select id="vessel-select">
+                    <option value="">--Choisir le type--</option>
+                    <option value="cruiser">Cruiser</option>
+                    <option value="frigate">Frigate</option>
+                    <option value="submarine">Submarine</option>
+                </select><br>
+            <label for="x">X:</label><br>
+            <input type="number" id="x" name="x" required value="0"><br>
+            <label for="y">Y:</label><br>
+            <input type="number" id="y" name="y" required value="0"><br>
+            <label for="z">Z:</label><br>
+            <input type="number" id="z" name="z" required value="0"><br>
+            <input class="submit-button" type="submit" value="Valider">
+        </form>
+    </div>
+</div>
+</body>
+</html>
